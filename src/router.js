@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/views/Home.vue";
 import Todos from "@/views/Todos.vue";
+import Calculator from "@/views/Calculator.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/todos",
     name: "Todos",
     component: Todos,
+  },
+  {
+    path: "/calculator",
+    name: "Calculator",
+    component: Calculator,
   },
 ];
 

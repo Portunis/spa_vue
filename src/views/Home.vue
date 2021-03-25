@@ -1,10 +1,7 @@
 <template>
     <div>
-        <h2>Home page
-        </h2>
-        <p>Lorem fshgsdkhbsujhbn;sglnhjrsnhjnhljkfn</p>
-
-        <router-link to="/todos">Todos</router-link>
+        <h2>Home page</h2>
+        <p>Главная страница</p>
     </div>
 </template>
 
