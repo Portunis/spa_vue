@@ -1,10 +1,8 @@
 <template>
     <div>
-        <router-link to="/">Home</router-link>
-        <hr>
         <AddTodo
                 @add-todo="addTodo"
-        />
+        /><br>
         <select v-model="filter">
             <option value="all">All</option>
             <option value="completed">Completed</option>

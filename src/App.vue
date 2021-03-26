@@ -1,19 +1,20 @@
 <template>
-    <header>
-        <div class="menu">
-            <ul>
-                <li><router-link to="/todos">Todos</router-link></li>
-                <li> <router-link to="/calculator">Calculator</router-link></li>
-            </ul>
+        <div class="nav-bar">
+            <div class="menu">
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/todos">Todos</router-link></li>
+                    <li> <router-link to="/calculator">Calculator</router-link></li>
+                    <li> <router-link to="/drops">Drop</router-link></li>
+
+                </ul>
+            </div>
         </div>
-    </header>
-<div>
-    <h1>Todo application</h1>
-    <hr>
-
-    <router-view />
-</div>
-
+        <div>
+            <h1>Portunis application</h1>
+            <hr>
+            <router-view />
+        </div>
 </template>
 
 <script>
@@ -66,4 +67,46 @@ export default {
         color: #000;
         text-decoration: none;
     }
+
+    body {
+        background-color: #f2f2f2;
+        margin: 0px;
+        font-family: tahoma,serif;
+        color: #282828;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    label {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+
+    .nav-bar {
+        background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+        height: 60px;
+        margin-bottom: 25px;
+        -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+    }
+
+    p {
+        font-size: 22px;
+    }
+    select {
+        height: 40px;
+        font-size: 20px;
+        background-color: white;
+        cursor: pointer;
+    }
+    ul {
+        list-style-type: none;
+    }
+
 </style>
